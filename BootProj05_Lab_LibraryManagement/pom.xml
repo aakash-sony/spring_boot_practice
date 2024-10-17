@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.nit</groupId>
-	<artifactId>BootProj05_Value_Injection02</artifactId>
+	<artifactId>BootProj05_Lab_LibraryManagement</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>BootProj05_Value_Injection02</name>
-	<description>value injection using Configuration annotaion</description>
+	<name>BootProj05_Lab_LibraryManagement</name>
+	<description>library management System</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -32,9 +32,14 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>com.oracle.database.jdbc</groupId>
+			<artifactId>ojdbc11</artifactId>
+			<scope>runtime</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
@@ -44,16 +49,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-configuration-processor</artifactId>
-			<optional>true</optional>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-configuration-processor</artifactId>
-			<optional>true</optional>
 		</dependency>
 	</dependencies>
 
