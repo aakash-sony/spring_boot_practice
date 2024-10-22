@@ -75,4 +75,23 @@ public class OrderOpServiceImpl implements IOrderOpService {
 	        return orderDAO.existsById(id);
 	    }
 
+	@Override
+	public List<Order> findOrdersByOrderDate(String date) {
+		List<Order> byOrders_date = orderDAO.getOrdersByDate(date);
+		if(byOrders_date.isEmpty()) {
+			System.out.println("No orders found for this date..."+date);
+		}
+		return byOrders_date;
+	}
+
+	@Override
+	public List<Order> findOrderByOrderDate(String date) {
+		List<Order> orderByDate = orderDAO.getOrderByDate(date);
+		if(orderByDate.isEmpty())
+		{
+			System.out.println("No orders found for this date..."+date);
+		}
+		return orderByDate;
+	}
+
 }

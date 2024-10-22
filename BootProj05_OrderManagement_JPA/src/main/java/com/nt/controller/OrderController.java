@@ -93,4 +93,26 @@ public class OrderController {
 		List<Order> allOrderByName = service.findAllOrderByName(name);
 		allOrderByName.forEach(System.out::print);	
 	}
+	
+	public void findOrdersByOrderDate()
+	{
+		System.out.print("Enter date to find the order list: ");
+		String date = scanner.nextLine();
+		
+		List<Order> ordersByOrderDate = service.findOrdersByOrderDate(date);
+		ordersByOrderDate.forEach(order ->{
+			System.out.println(order);
+		});
+	}
+	
+	public void findOrderByOrderDate()
+	{
+		System.out.print("Enter date to find the order list: ");
+		String date = scanner.nextLine();
+		
+		List<Order> ordersByOrderDate = service.findOrderByOrderDate(date);
+		ordersByOrderDate.forEach(order ->{
+			System.out.println(order);
+		});
+	}
 }

@@ -6,7 +6,7 @@ import com.nt.model.Order;
 
 public interface IOrderOpService {
 	public String addOrder(Order order);
-
+    
 	public List<Order> getAllOrder();
 
 	public Order getOrderById(int id);
@@ -18,4 +18,8 @@ public interface IOrderOpService {
 	public List<Order> findAllOrderByName(String name);
 	
 	boolean orderExistsById(int id);
+	
+	public List<Order> findOrdersByOrderDate(String date);
+	
+	public List<Order> findOrderByOrderDate(String date);
 }
