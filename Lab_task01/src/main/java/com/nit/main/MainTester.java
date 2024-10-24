@@ -12,7 +12,7 @@ public class MainTester {
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfg.class);
 		DiscountService bean = ctx.getBean(DiscountService.class);
 		bean.getDiscount().applyDiscount(120);
-		ctx.close();
+		
 	}
 
 }
