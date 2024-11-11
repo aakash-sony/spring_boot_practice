@@ -14,7 +14,7 @@ public class MyController {
 	public String myMethod(Model model)
 	{
 		System.out.println("about method..");
-		model.addAttribute("name","Akash Soni");
+		model.addAttribute("name","Akash");
 		model.addAttribute("currentDate",new Date());
 		return "about";
 	}
