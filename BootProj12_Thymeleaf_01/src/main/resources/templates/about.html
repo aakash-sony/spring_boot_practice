@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1 th:text="${#strings.toLowerCase(name)}"></h1>
+<h2>Length: <span th:text="${#strings.length(name)}"></span></h2>
+<h1 th:text="${currentDate}"></h1>
+<h2>My name is <span th:text="${name}"></span></h2>
+<h1>Akash Soni</h1>
+<div th:with="a=5,b=9">
+    <h2>value of a is: <span th:text="${a}"></span></h2>
+    <h2 th:text="'Value of b is :' +${b}"></h2>
+</div>
+</body>
+</html>
